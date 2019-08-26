@@ -27,20 +27,20 @@ this is the last project of react Nanodegree on Udacity
 
 ### photos of App
 
-###### Home page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/home.png)
+###### Home Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/home.jpeg)
 
-###### New Question page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/new_question.png)
+###### New Deck Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/add_deck.jpeg)
 
-###### Answered Question page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/answered_question.png)
+###### Deck Details Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/deck_details.jpeg)
 
-###### UnAnswered Question page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/unanswered_question.png)
+###### Add Card To Deck Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/add_card.jpeg)
 
-###### Loader Board page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/loader_board.png)
+###### Quiz Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/quiz.jpeg)
 
-###### 404 page
-![alt text](https://github.com/Mohamed-awad/Would-You-Rather/blob/master/public/images/404.png)
+###### Quiz Result Screen
+![alt text](https://github.com/Mohamed-awad/Flash-Card/blob/master/images/quiz_result.jpeg)
