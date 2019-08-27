@@ -8,6 +8,11 @@ import {
   FlatList
 } from 'react-native';
 import {getDecks} from "../utils/helper";
+import {
+  NOTIFICATION_KEY,
+  clearLocalNotification,
+  setLocalNotification
+} from "../utils/helper";
 
 
 export default class HomeScreen extends Component{
@@ -57,10 +62,18 @@ export default class HomeScreen extends Component{
   });
 
   renderDeck = ({item, index}) => {
+    if(item.id === NOTIFICATION_KEY) {
+      return (<View/>);
+    }
+
     return (
       <View key={index} style={styles.viewDeckList}>
-        <Text style={styles.deckHead} onPress={() => this.props.navigation.navigate("DeckDetails",
-            {"id": item.id})}>
+        <Text style={styles.deckHead} onPress={() => {
+          this.props.navigation.navigate("DeckDetails",
+              {"id": item.id});
+          clearLocalNotification()
+              .then(setLocalNotification())
+        }}>
           {item.data.title}
         </Text>
          <Text style={styles.cardsNumber} onPress={() => this.props.navigation.navigate("DeckDetails",

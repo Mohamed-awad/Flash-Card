@@ -3,6 +3,11 @@ import {View, StyleSheet, Text,
   TextInput, Keyboard, TouchableOpacity, AsyncStorage} from 'react-native';
 import {AntDesign} from "@expo/vector-icons";
 import {saveDeckTitle} from "../utils/helper";
+import {
+  clearLocalNotification,
+  setLocalNotification
+} from "../utils/helper";
+
 
 export default class AddDeckScreen extends Component{
 
@@ -41,6 +46,8 @@ export default class AddDeckScreen extends Component{
       alert('Deck Title can\'t be empty')
     }
 
+    clearLocalNotification()
+    setLocalNotification()
   }
 
 
