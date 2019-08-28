@@ -38,8 +38,10 @@ export default class AddDeckScreen extends Component{
 
   handleSubmit = () => {
     if(this.state.title !== '') {
-      saveDeckTitle(this.state.title).then(() => {
-        this.props.navigation.navigate("Home")
+      saveDeckTitle(this.state.title).then((data) => {
+        if(data !== null){
+          this.props.navigation.navigate("DeckDetails", {"id": data})
+        }
       })
       this.setState({title: ''});
     } else {

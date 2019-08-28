@@ -35,9 +35,12 @@ export async function  saveDeckTitle (title){
       createdAt: new Date(),
       questions: []
     }
-    await AsyncStorage.setItem(title + generateUID(), JSON.stringify(Deck));
+    let deckKey = title + generateUID()
+    await AsyncStorage.setItem(deckKey, JSON.stringify(Deck));
+    return deckKey;
   } catch (error) {
     alert('error in save Deck')
+    return null;
   }
 }
 

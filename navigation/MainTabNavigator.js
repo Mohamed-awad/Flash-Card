@@ -33,7 +33,7 @@ HomeStack.navigationOptions = {
       focused={focused}
       name={
         Platform.OS === 'ios'
-          ? `ios-list-box${focused ? '' : '-outline'}`
+          ? 'ios-list-box'
           : 'md-list-box'
       }
     />
